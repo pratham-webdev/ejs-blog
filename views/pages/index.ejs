@@ -1,0 +1,15 @@
+<%- include('../partials/header'); -%>
+<div class="container">
+    <div class="py-5">
+        <% 
+            function memeHTML(item){
+                return `<div class="col"><div class="border p-3 h-100 rounded"><h6>${item.name}</h6><img class="img-fluid" src="${item.url}" alt=""></div></div>`
+            }
+            let memes = foo.reverse().map(memeHTML).join("")%>
+        <div class="row row-cols-4 g-3">
+            <%-memes%>
+            </div>
+        
+    </div>
+</div>
+<%- include('../partials/footer'); -%>
